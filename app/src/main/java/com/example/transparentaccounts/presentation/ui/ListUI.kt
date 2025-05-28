@@ -50,7 +50,7 @@ fun ListUI(navController: NavController, viewModel: TransparentAccountsListVM = 
         ) {
             items(accounts) { item ->
                 AccountCard (item, onClick = {
-
+                    navController.navigate("detail/${item.iban}")
                 })
             }
         }
