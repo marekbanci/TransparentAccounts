@@ -2,7 +2,6 @@ package com.example.transparentaccounts.domain.usecase
 
 import com.example.transparentaccounts.data.network.TransparentAccountsAPI
 import com.example.transparentaccounts.data.network.response.TransparentAccountsResp
-import com.example.transparentaccounts.domain.model.TransparentAccount
 import javax.inject.Inject
 
 class AccountsUseCase @Inject constructor(

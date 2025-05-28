@@ -21,7 +21,7 @@ class TransparentAccountsListVM @Inject constructor(
     private val _accounts = MutableStateFlow<List<TransparentAccount>>(emptyList())
     val accounts: StateFlow<List<TransparentAccount>> = _accounts
 
-    private var nextPage = 0;
+    private var nextPage = 0
     private var limit = 50
 
     init {
