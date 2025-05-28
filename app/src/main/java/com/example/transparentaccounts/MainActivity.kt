@@ -17,7 +17,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TransparentAccountsTheme {
-                ListUI()
+                Navigation()
             }
         }
     }

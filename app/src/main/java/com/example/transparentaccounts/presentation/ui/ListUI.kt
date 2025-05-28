@@ -18,12 +18,13 @@ import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavController
 import com.example.transparentaccounts.presentation.ui.components.AccountCard
 import com.example.transparentaccounts.presentation.viewmodels.TransparentAccountsListVM
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ListUI(viewModel: TransparentAccountsListVM = hiltViewModel()) {
+fun ListUI(navController: NavController, viewModel: TransparentAccountsListVM = hiltViewModel()) {
     val accounts by viewModel.accounts.collectAsState(emptyList())
     val listState = rememberLazyListState()
 
